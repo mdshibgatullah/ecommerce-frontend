@@ -51,7 +51,7 @@ const FeaturedProducts = () => {
                                                     <h3 className='text-black fw-bold'>{product.price}</h3>
 
                                                     {
-                                                        product.compare_price && <span className='text-decoration-line-through'>{product.compare_price}</span>
+                                                        product.discount_price && <span className='text-decoration-line-through'>{product.discount_price}</span>
                                                     }
 
                                                     

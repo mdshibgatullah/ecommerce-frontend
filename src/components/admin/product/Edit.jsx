@@ -272,7 +272,7 @@ const Edit = ({ placeholder }) => {
                     </div>
                     <div className="col-md-6">
                       <label>Discount Price</label>
-                      <input type="number" className="form-control" {...register('compare_price')} />
+                      <input type="number" className="form-control" {...register('discount_price')} />
                     </div>
                   </div>
 
