@@ -22,68 +22,6 @@ body{
 
 
 
-.hero-section{
-    background: linear-gradient(135deg,#44349a,#89a6ed);
-    min-height:90vh;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-}
-
-.hero-row{
-    min-height:80vh;
-}
-
-.hero-content h1{
-    font-size:55px;
-    font-weight:800;
-    margin-bottom:20px;
-}
-
-.hero-content p{
-    font-size:18px;
-    line-height:1.7;
-    margin-bottom:30px;
-    opacity:.9;
-}
-
-.hero-btn{
-    background:white;
-    color:#1a1054;
-    padding:12px 28px;
-    border-radius:30px;
-    font-weight:600;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.hero-btn:hover{
-    background:#000;
-    color:#fff;
-}
-
-.hero-img-box{
-    display:flex;
-    justify-content:flex-end;
-}
-
-.hero-img{
-    max-height:650px;
-    width:auto;
-    object-fit:contain;
-    margin-left:auto;   
-    display:block;
-    
-}
-
-.hero-section h1{
-    letter-spacing:1px;
-}
-
-.hero-section .btn{
-    border-radius:30px;
-}
-
 h1{font-size:2.5em;}
 h2{font-size:2em;}
 h3{font-size:1.3em;}
@@ -180,6 +118,69 @@ header .navbar-extend-lg .navbar-nav .nav-link{
     width:100%;
     background-repeat:no-repeat;
     background-size:cover;
+}
+
+
+.hero-section{
+    background: linear-gradient(135deg,#44349a,#89a6ed);
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-row{
+    min-height:80vh;
+}
+
+.hero-content h1{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+    opacity:.9;
+}
+
+.hero-btn{
+    background:white;
+    color:#1a1054;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+.hero-img-box{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.hero-img{
+    max-height:650px;
+    width:auto;
+    object-fit:contain;
+    margin-left:auto;   
+    display:block;
+    
+}
+
+.hero-section h1{
+    letter-spacing:1px;
+}
+
+.hero-section .btn{
+    border-radius:30px;
 }
 
 /**** Product Card ****/
