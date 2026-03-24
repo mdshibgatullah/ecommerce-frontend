@@ -33,6 +33,7 @@ import OrderDetail from './components/user/OrderDetail'
 import Shipping from './components/admin/Shipping/Shipping'
 import ForgotPassword from './components/user/ForgotPassword'
 import {default as AdminForgotPassword} from './components/user/ForgotPassword'
+import UserList from './components/user/UserList'
 
 
 function App() {
@@ -178,6 +179,13 @@ function App() {
           <Route path='/admin/shipping' element={
             <AdminRequireAuth>
               <Shipping />
+            </AdminRequireAuth>
+          }/>
+
+
+          <Route path='/admin/user' element={
+            <AdminRequireAuth>
+              <UserList />
             </AdminRequireAuth>
           }/>
 

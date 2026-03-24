@@ -111,7 +111,7 @@ const Dashboard = () => {
                                     </div>
 
                                     <div className="card-footer">
-                                        <a href="#">View Users</a>
+                                        <Link to="/admin/user">View Users</Link>
                                     </div>
                                 </div>
                             </div>
