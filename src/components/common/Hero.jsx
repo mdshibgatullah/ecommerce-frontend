@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Link } from 'react-router-dom';
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -57,9 +58,9 @@ const Hero = () => {
 
                   <p className="pb-3">{slide.description}</p>
 
-                  <a href="#" className="hero-btn">
+                  <Link to="/shop" className="hero-btn">
                     {slide.button} →
-                  </a>
+                  </Link>
 
                 </div>
 
