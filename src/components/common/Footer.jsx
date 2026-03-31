@@ -17,7 +17,7 @@ const Footer = () => {
                         <div className="col-md-3 pb-4">
                             <h2 className='mb-3'>Categories</h2>
                             <ul>
-                                <li><a href="">Kids</a></li>
+                                <li><a href="#">Kids</a></li>
                                 <li><a href="">Mens</a></li>
                                 <li><a href="">Womens</a></li>
                             </ul>
