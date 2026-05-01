@@ -14,7 +14,7 @@ const Hero = () => {
 
   const slides = [
     {
-      title: "MEN'S FASHION update",
+      title: "MEN'S FASHION",
       description:
         "Upgrade your wardrobe with premium men's shirts, trousers and accessories designed for confidence and comfort.",
       img: HeroImg1,
