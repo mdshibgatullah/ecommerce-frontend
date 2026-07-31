@@ -1,89 +1,61 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+// import '../assets/'
+import hero1 from "../../assets/images/hero1.png";
+import hero2 from "../../assets/images/hero2.png";
+import hero3 from "../../assets/images/hero3.png";
 
-import "swiper/css";
-import "swiper/css/pagination";
+const slides = [
+  {
+    bg: hero1,
+    title: "WOMEN'S COLLECTION",
+    subtitle: "Explore elegant and modern women's fashion.",
+  },
+  {
+    bg: hero2,
+    title: "MEN'S COLLECTION",
+    subtitle: "Premium fashion for modern gentlemen.",
+  },
+  {
+    bg: hero3,
+    title: "BABY COLLECTION",
+    subtitle: "Cute and stylish outfits for kids.",
+  },
+];
 
-import HeroImg1 from "../../assets/images/HeroImg1.png";
-import HeroImg2 from "../../assets/images/HeroImg2.png";
-import HeroImg3 from "../../assets/images/HeroImg3.png";
+export default function Hero() {
+  const [index, setIndex] = useState(0);
 
-const Hero = () => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 5000);
 
-  const slides = [
-    {
-      title: "MEN'S FASHION",
-      description:
-        "Upgrade your wardrobe with premium men's shirts, trousers and accessories designed for confidence and comfort.",
-      img: HeroImg1,
-      button: "Shop Men",
-    },
-    {
-      title: "WOMEN'S COLLECTION",
-      description:
-        "Explore elegant and modern women's fashion. Discover dresses, tops and outfits designed to elevate your style.",
-      img: HeroImg2,
-      button: "Shop Women",
-    },
-    {
-      title: "KIDS COLLECTION",
-      description:
-        "Cute, comfortable and stylish clothing for kids. Discover colorful outfits perfect for everyday adventures.",
-      img: HeroImg3,
-      button: "Shop Kids",
-    },
-  ];
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="hero-section">
-      <div className="container">
+    <section
+      className="hero-section"
+      style={{
+        backgroundImage: `url(${slides[index].bg})`,
+      }}
+    >
+      <div className="container hero-content">
+        <div className="hero-left">
+          <span className="discover">
+            ✦ Discover Your Style
+          </span>
 
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 3500 }}
-          loop={true}
-          pagination={{ clickable: true }}
-        >
+          <h1>{slides[index].title}</h1>
 
-          {slides.map((slide, index) => (
+          <p>{slides[index].subtitle}</p>
 
-            <SwiperSlide key={index}>
-              <div className="row align-items-center hero-row">
-
-                <div className="col-lg-6 text-white hero-content pt-5 pt-lg-0">
-
-                  <h1>{slide.title}</h1>
-
-                  <p className="pb-3">{slide.description}</p>
-
-                  <Link to="/shop" className="hero-btn">
-                    {slide.button} →
-                  </Link>
-
-                </div>
-
-                <div className="col-lg-6 hero-img-box pt-5">
-
-                  <img
-                    src={slide.img}
-                    alt={slide.title}
-                    className="hero-img"
-                  />
-
-                </div>
-
-              </div>
-            </SwiperSlide>
-
-          ))}
-
-        </Swiper>
-
+          <button className="hero-btn">
+            Shop Now →
+          </button>
+        </div>
       </div>
     </section>
   );
-};
+}
 
-export default Hero;
