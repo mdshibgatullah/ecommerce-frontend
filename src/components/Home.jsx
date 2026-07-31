@@ -6,6 +6,7 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 import Hero from './common/Hero';
 import Layouts from './common/Layouts';
+import CategoryStrip from './common/CategoryStrip';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
         <div>
             <Layouts>
                 <Hero />
+                <CategoryStrip />
                 <LatestProducts />
                 <FeaturedProducts />
             </Layouts>

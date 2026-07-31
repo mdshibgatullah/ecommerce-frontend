@@ -168,7 +168,7 @@ header .navbar-extend-lg .navbar-nav .nav-link{
 
 
 
-/**** Section Slider ****/
+/**** Hero Section ****/
 
 .hero-section{
   min-height:720px;
@@ -283,6 +283,48 @@ header .navbar-extend-lg .navbar-nav .nav-link{
   }
 
 }
+
+/* category-strip */
+
+.category-strip {
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+
+.category-wrapper {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.category-img {
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.category-card p {
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .category-strip {
+    margin-top: -20px;
+  }
+
+  .category-img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .category-card p {
+    font-size: 13px;
+  }
+}
+
+
 /**** Product Card ****/
 
 .product .card-img{
