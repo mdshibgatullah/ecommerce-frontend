@@ -50,9 +50,9 @@ export default function Hero() {
 
           <p>{slides[index].subtitle}</p>
 
-          <button className="hero-btn">
+          <a href="/shop" className="hero-btn">
             Shop Now →
-          </button>
+          </a>
         </div>
       </div>
     </section>
