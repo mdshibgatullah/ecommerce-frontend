@@ -23,10 +23,8 @@ export const CartProvider = ({children}) =>{
     );
 
     if (existingIndex > -1) {
-        // same product + same size → increase qty
         updateCart[existingIndex].qty += 1;
     } else {
-        // new item
         updateCart.push({
             id: `${product.id}-${Date.now()}`,
             product_id: product.id,
