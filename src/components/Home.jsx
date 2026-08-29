@@ -7,6 +7,7 @@ import Footer from './common/Footer';
 import Hero from './common/Hero';
 import Layouts from './common/Layouts';
 import CategoryStrip from './common/CategoryStrip';
+import FeatureBadge from './common/FeatureBadge';
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
                 <CategoryStrip />
                 <LatestProducts />
                 <FeaturedProducts />
+                <FeatureBadge />
             </Layouts>
 
             
