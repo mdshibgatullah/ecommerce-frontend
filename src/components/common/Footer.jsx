@@ -1,5 +1,5 @@
 import React from 'react';
-import {  FaFacebookF, FaInstagram, FaTiktok,  FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok,  FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from '../../assets/images/logo-white.png';
 
 
