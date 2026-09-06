@@ -1,12 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Logo from "../../assets/images/logo.png";
-import {
-  FaUser,
-  FaShoppingCart,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaUser, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { apiUrl } from "./http";
 import { CartContext } from "../context/Cart";
@@ -41,7 +36,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className="main-header">
+      <header className="main-header border-bottom">
         <Container>
             <div className="d-flex align-items-center justify-content-between py-3 header-wrapper">
 

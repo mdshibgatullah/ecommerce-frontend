@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import hero1 from "../../assets/images/hero1.png";
 import hero2 from "../../assets/images/hero2.png";
 import hero3 from "../../assets/images/hero3.png";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -50,9 +51,9 @@ export default function Hero() {
 
           <p>{slides[index].subtitle}</p>
 
-          <a href="/shop" className="hero-btn">
+          <Link to={"shop"} className="hero-btn">
             Shop Now →
-          </a>
+          </Link>
         </div>
       </div>
     </section>
